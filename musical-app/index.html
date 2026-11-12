@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="es"> 
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un
+documento de HTML-->
+
+<html lang="es"><!--Aqui inicia mi página con a etiqueta html-->
+<head> <!--Aqui en el head esta todo lo que no es visible en la pagima pero lo hace funcional->
+<---Con los metadatos puede colocar caracteres especiale, dar informacion al SEO para posicionarme-->
+<meta charset="UTF-8"> <!--Permite caracteres especiales-->
+  <meta name="description" content="Musical de Electronica">
+  <meta name="author" content="Omar Juarez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 <title>Musical Omar</title>
 </head>
 <body>
 
-<h1>Musical Omar</h1>
-<p>Escucha mis 3 canciones de Electronica</p>
+<div class ="Container-musical">
+    <img src="img1.jpg" alt="Imagen de musical app " class="imagen-portada">
+
+    <h1>Musical Omar</h1>
+    <p/class=pmusical">Canciones de musica Electronica</p>
+    
+    <p>Escucha mis 3 canciones de Electronica</p>
+     <div class="lista-canciones">
+        <!--CANCION 1-->
+        <div class="Canciones">
+            <p>1.Ipod Touch - Ninajirachi</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Ninajirachi - iPod Touch.mp3" type="audio/mpeg">
+                </audio>
+     </div>
+       <!--CANCION 2-->
+        <div class="Canciones">
+            <p>2.Freak it - Kim petras</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Kim Petras - Freak It (Visualizer).mp3" type="audio/mpeg">
+                </audio>
+
+    </div>
+    <!--CANCION 3-->
+        <div class="Canciones">
+            <p>3.pink diamond - Charli xcx</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Charli XCX - pink diamond [Official Audio].mp3" type="audio/mpeg">
+                </audio>
 
 </body>
 </html>
