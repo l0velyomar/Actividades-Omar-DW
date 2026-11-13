@@ -9,6 +9,7 @@ documento de HTML-->
   <meta name="description" content="Musical de Electronica">
   <meta name="author" content="Omar Juarez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 <title>Musical Omar</title>
 </head>
@@ -20,32 +21,61 @@ documento de HTML-->
     <h1>Musical Omar</h1>
     <p/class=pmusical">Canciones de musica Electronica</p>
     
-    <p>Escucha mis 3 canciones de Electronica</p>
-     <div class="lista-canciones">
-        <!--CANCION 1-->
-        <div class="Canciones">
+    <p>Escucha mis 3 canciones</p>
+    <!--  <div class="lista-canciones">
+
+        <! --CANCION 1-->
+       <!--  <div class="Canciones">
             <p>1.Ipod Touch - Ninajirachi</p>
              <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="Ninajirachi - iPod Touch.mp3" type="audio/mpeg">
-                </audio>
-     </div>
-       <!--CANCION 2-->
-        <div class="Canciones">
+                    <! -- Mp3 de prueba 1 -->
+                    <!-- <source src="Ninajirachi - iPod Touch.mp3" type="audio/mpeg">
+                </audio> -->
+     <!-- </div>
+       <! --CANCION 2-->
+        <!-- <div class="Canciones">
             <p>2.Freak it - Kim petras</p>
              <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="Kim Petras - Freak It (Visualizer).mp3" type="audio/mpeg">
-                </audio>
+                    <! -- Mp3 de prueba 1 -->
+                    <!-- <source src="Kim Petras - Freak It (Visualizer).mp3" type="audio/mpeg">
+                </audio> --> <!-- -->
 
-    </div>
-    <!--CANCION 3-->
-        <div class="Canciones">
-            <p>3.pink diamond - Charli xcx</p>
-             <audio controls class="audio-player">
+    <!-- </div>
+    <! --CANCION 3-->
+         <!-- type="audio/mpeg"<div class="Canciones">
+            <p>3.pink diamond - Charli xcx</p> -->
+             <!-- <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Charli XCX - pink diamond [Official Audio].mp3" type="audio/mpeg">
-                </audio>
+                    <!-- <source src="Charli XCX - pink diamond [Official Audio].mp3" type="audio/mpeg"> -->
+               <!-- </audio> --> 
+         
+           <!--  </div>   -->  
+       
+        <!-- </div>  -->  
+   <!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">1.iPod Touch - Nninajirachi</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="Ninajirachi - iPod Touch.mp3" type="audio/mpeg">
+        </audio>
 
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+
+      </div>
+
+    </div>  
+            
+       
+
+
+<script src="script.js"></script>
 </body>
 </html>

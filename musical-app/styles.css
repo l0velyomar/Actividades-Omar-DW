@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
-    background: linear-gradient(135deg, #1900ff, #0821dd);
+    background: linear-gradient(135deg, #001aaf, #001aaf);
     font-family: "Roboto", sans-serif;
     padding: 20px; 
 }
@@ -63,3 +63,33 @@ P{
     border-radius: 10px;
 }
 
+.audio-player {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.controles button {
+    background-color: #b7b9c4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.controles button:hover {
+    background-color: #b7b9c4;
+}
